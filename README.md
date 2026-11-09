@@ -21,39 +21,37 @@ VPN IP: 10.159.68.3
         │
 
 East US Region (Server VM)
-VPN IP: 10.159.68.1
-Test Results
+VPN IP
+
+Test Results :
 Metric	Result
+
 Tunnel Status	Successful
+
 Packet Loss	0%
+
 Average RTT	229.367 ms
+
 Minimum RTT	229.281 ms
+
 Maximum RTT	229.639 ms
+
 Jitter	0.074 ms
-Key Finding
+
+Key Findings : 
 The majority of the observed latency originated from the geographical distance between India and East US rather than VPN processing overhead.
 
 WireGuard introduced negligible additional latency while maintaining secure encrypted communication.
 
-Project Deliverables
+Project Deliverables : 
 WireGuard VPN Proof of Concept Documentation
 WireGuard VPN Deployment Guide
 Azure Network Security Configuration
 WireGuard Server Configuration
 WireGuard Client Configuration
 Latency Analysis and Validation Results
-Skills Demonstrated
-Microsoft Azure
-Ubuntu Linux
-WireGuard VPN
-Azure Networking
-Network Security Groups (NSG)
-Linux Administration
-Network Troubleshooting
-VPN Deployment
-Latency Analysis
-Technical Documentation
-Repository Structure
+
+Repository Structure : 
 docs/
     Project Documentation
 
@@ -62,5 +60,6 @@ configs/
 
 images/
     Screenshots and Architecture Diagrams
-Outcome
+    
+Outcome :
 Successfully deployed and validated WireGuard VPN connectivity between Azure regions with 0% packet loss and stable cross-region performance.
