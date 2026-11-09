@@ -47,7 +47,7 @@ configs/
     Sample WireGuard Configurations
 
 images/
-    Screenshots and Architecture Diagrams
+    Architecture Diagram
     
 ## Outcome
 Successfully deployed and validated WireGuard VPN connectivity between Azure regions with 0% packet loss and stable cross-region performance.
