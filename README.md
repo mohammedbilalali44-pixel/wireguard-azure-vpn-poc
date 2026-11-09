@@ -18,32 +18,25 @@ Rather than relying on estimates, a Proof of Concept was built and tested using 
 
 
 ## Test Results :
-Metric	Result
+- Metric	Result
 
-Tunnel Status	Successful
+- Tunnel Status	Successful
 
-Packet Loss	0%
+- Packet Loss	0%
 
-Average RTT	229.367 ms
+- Average RTT	229.367 ms
 
-Minimum RTT	229.281 ms
+- Minimum RTT	229.281 ms
 
-Maximum RTT	229.639 ms
+- Maximum RTT	229.639 ms
 
-Jitter	0.074 ms
+- Jitter	0.074 ms
 
 ## Key Findings
 The majority of the observed latency originated from the geographical distance between India and East US rather than VPN processing overhead.
 
 WireGuard introduced negligible additional latency while maintaining secure encrypted communication.
 
-## Project Deliverables
-WireGuard VPN Proof of Concept Documentation
-WireGuard VPN Deployment Guide
-Azure Network Security Configuration
-WireGuard Server Configuration
-WireGuard Client Configuration
-Latency Analysis and Validation Results
 
 ## Repository Structure 
 
