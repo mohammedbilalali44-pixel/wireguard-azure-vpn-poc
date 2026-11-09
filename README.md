@@ -13,7 +13,7 @@ Rather than relying on estimates, a Proof of Concept was built and tested using 
 
 Architecture : 
 India Region (Client VM)
-VPN IP: 10.159.68.3
+VPN IP: 
 
         │
         │ WireGuard VPN Tunnel
@@ -21,7 +21,7 @@ VPN IP: 10.159.68.3
         │
 
 East US Region (Server VM)
-VPN IP
+VPN IP : 
 
 Test Results :
 Metric	Result
