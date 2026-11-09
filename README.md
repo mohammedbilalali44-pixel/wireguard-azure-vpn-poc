@@ -12,16 +12,9 @@ What latency should users in India expect when connecting to a WireGuard VPN gat
 Rather than relying on estimates, a Proof of Concept was built and tested using Azure virtual machines.
 
 Architecture : 
-India Region (Client VM)
-VPN IP: 
 
-        │
-        │ WireGuard VPN Tunnel
-        │ UDP 51820
-        │
+<img width="176" height="242" alt="architecture" src="https://github.com/user-attachments/assets/022d4f1b-725e-4caa-9c58-88398ed5d6a0" />
 
-East US Region (Server VM)
-VPN IP : 
 
 Test Results :
 Metric	Result
