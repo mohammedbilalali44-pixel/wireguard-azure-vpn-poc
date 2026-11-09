@@ -1,0 +1,9 @@
+[Interface]
+PrivateKey = <CLIENT_PRIVATE_KEY>
+Address = <CLIENT_VPN_IP>
+
+[Peer]
+PublicKey = <SERVER_PUBLIC_KEY>
+Endpoint = <SERVER_PUBLIC_IP>:51820
+AllowedIPs = <VPN_SUBNET>
+PersistentKeepalive = 25
