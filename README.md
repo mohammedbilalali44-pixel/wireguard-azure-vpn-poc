@@ -54,13 +54,19 @@ Detailed deployment guides are available in the docs directory.
 This repository contains example configurations only.
 The following items have been intentionally excluded:
 
-Private keys
-Public IP addresses
-Azure Subscription IDs
-Resource Group names
-Production DNS records
-Tenant information
-Sensitive customer data
+1. Private keys
+
+2. Public IP addresses
+
+3. Azure Subscription IDs
+
+4. Resource Group names
+
+5. Production DNS records
+
+6. Tenant information
+
+7. Sensitive customer data
 Replace all placeholder values with your own lab or production settings before deployment.
 
 ## Disclaimer
