@@ -15,39 +15,16 @@ Azure networking and NSG configuration
 Client and server configuration examples
 Connectivity validation and testing
 ## Architecture
-Azure Ubuntu Server → Linux Client
+## Azure Ubuntu Server → Linux Client
 ![Linux Client Architecture](images/Linux%20Client%20Architecture.png)
 
 Reference architecture showing a WireGuard VPN tunnel between an Azure-hosted Ubuntu server and a remote Linux client.
 
-Azure Ubuntu Server → Windows Client
+## Azure Ubuntu Server → Windows Client
 ![Windows Client Architecture](images/Windows%20Client%20Architecture.png)
 
 Reference architecture showing a WireGuard VPN tunnel between an Azure-hosted Ubuntu server and a remote Windows client.
 
-## Deployment Scenarios
-Scenario	Server	Client
-Scenario 1	Ubuntu Linux (Azure)	Ubuntu Linux
-Scenario 2	Ubuntu Linux (Azure)	Windows 10/11
-Repository Structure
-wireguard-vpn-lab/
-│
-├── configs/
-│   ├── server-wg0.conf.example
-│   ├── client-wg0.conf.example
-│   └── README.md
-│
-├── docs/
-│   ├── WireGuard VPN Deployment Guide - Linux Server to Linux Client.pdf
-│   ├── WireGuard VPN Deployment Guide - Linux Server to Windows Client.pdf
-│   └── README.md
-│
-├── images/
-│   ├── architecture-linux-client.png
-│   ├── architecture-windows-client.png
-│   └── README.md
-│
-└── README.md
 ## Technologies Used
 Microsoft Azure
 Ubuntu Server
