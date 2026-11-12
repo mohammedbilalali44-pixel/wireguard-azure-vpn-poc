@@ -1,53 +1,96 @@
 ## WireGuard VPN on Microsoft Azure
+A practical WireGuard VPN deployment lab demonstrating secure remote connectivity using an Ubuntu-based WireGuard server hosted in Microsoft Azure.
 
-## Overview 
-This project demonstrates the deployment and validation of a WireGuard VPN tunnel between Microsoft Azure regions.
+This repository contains deployment guides, architecture diagrams, and configuration examples for multiple WireGuard client scenarios.
 
-The objective was to evaluate secure connectivity and measure latency between a client hosted in India and a WireGuard VPN server hosted in East US.
+## Overview
+WireGuard is a modern VPN solution designed to provide secure, high-performance encrypted networking with a minimal configuration footprint.
 
-## Business Scenario :
-A customer wanted to understand:
+This project demonstrates:
 
-What latency should users in India expect when connecting to a WireGuard VPN gateway hosted in East US?
+WireGuard Server deployment on Azure Ubuntu VM
+VPN connectivity using Linux clients
+VPN connectivity using Windows clients
+Azure networking and NSG configuration
+Client and server configuration examples
+Connectivity validation and testing
+## Architecture
+Azure Ubuntu Server → Linux Client
+![Linux Client Architecture](images/Linux%20Client%20Architecture.png)
 
-Rather than relying on estimates, a Proof of Concept was built and tested using Azure virtual machines.
+Reference architecture showing a WireGuard VPN tunnel between an Azure-hosted Ubuntu server and a remote Linux client.
 
-## Architecture : 
+Azure Ubuntu Server → Windows Client
+![Windows Client Architecture](images/Windows%20Client%20Architecture.png)
 
-<img width="176" height="242" alt="architecture" src="https://github.com/user-attachments/assets/022d4f1b-725e-4caa-9c58-88398ed5d6a0" />
+Reference architecture showing a WireGuard VPN tunnel between an Azure-hosted Ubuntu server and a remote Windows client.
 
+## Deployment Scenarios
+Scenario	Server	Client
+Scenario 1	Ubuntu Linux (Azure)	Ubuntu Linux
+Scenario 2	Ubuntu Linux (Azure)	Windows 10/11
+Repository Structure
+wireguard-vpn-lab/
+│
+├── configs/
+│   ├── server-wg0.conf.example
+│   ├── client-wg0.conf.example
+│   └── README.md
+│
+├── docs/
+│   ├── WireGuard VPN Deployment Guide - Linux Server to Linux Client.pdf
+│   ├── WireGuard VPN Deployment Guide - Linux Server to Windows Client.pdf
+│   └── README.md
+│
+├── images/
+│   ├── architecture-linux-client.png
+│   ├── architecture-windows-client.png
+│   └── README.md
+│
+└── README.md
+## Technologies Used
+Microsoft Azure
+Ubuntu Server
+WireGuard VPN
+Windows WireGuard Client
+## Key Features
+Secure VPN connectivity using WireGuard
+Lightweight and high-performance deployment
+Cross-platform VPN support
+Azure-hosted infrastructure
+Encrypted communication using modern cryptography
+Simple and reproducible configuration
+Testing Performed
+## The lab was validated using:
 
-## Test Results :
-- Metric	Result
+WireGuard tunnel status verification
+Endpoint connectivity testing
+ICMP reachability tests
+SSH connectivity validation
+VPN peer handshake validation
+Internet access testing through the tunnel
+Documentation
+Detailed deployment guides are available in the docs directory.
 
-- Tunnel Status	Successful
+## Guide
+Linux Server (Azure) → Linux Client
+Linux Server (Azure) → Windows Client
+## Security Notice
+This repository contains example configurations only.
 
-- Packet Loss	0%
+## The following items have been intentionally excluded:
 
-- Average RTT	229.367 ms
+Private keys
+Public IP addresses
+Azure Subscription IDs
+Resource Group names
+Production DNS records
+Tenant information
+Sensitive customer data
+Replace all placeholder values with your own lab or production settings before deployment.
 
-- Minimum RTT	229.281 ms
+## Disclaimer
+This project is intended for educational, testing, and proof-of-concept purposes. Review and adjust the configuration to meet your organization's security and compliance requirements before production use.
 
-- Maximum RTT	229.639 ms
-
-- Jitter	0.074 ms
-
-## Key Findings
-The majority of the observed latency originated from the geographical distance between India and East US rather than VPN processing overhead.
-
-WireGuard introduced negligible additional latency while maintaining secure encrypted communication.
-
-
-## Repository Structure 
-
-docs/
-    Project Documentation
-
-configs/
-    Sample WireGuard Configurations
-
-images/
-    Architecture Diagram
-    
-## Outcome
-Successfully deployed and validated WireGuard VPN connectivity between Azure regions with 0% packet loss and stable cross-region performance.
+Author
+Mohammed Bilal Ali
