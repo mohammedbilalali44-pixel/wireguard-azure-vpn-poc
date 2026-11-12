@@ -35,13 +35,19 @@ Simple and reproducible configuration
 Testing Performed
 ## The lab was validated using:
 
-WireGuard tunnel status verification
-Endpoint connectivity testing
-ICMP reachability tests
-SSH connectivity validation
-VPN peer handshake validation
-Internet access testing through the tunnel
-Documentation
+1. WireGuard tunnel status verification
+
+2. Endpoint connectivity testing
+
+3. ICMP reachability tests
+
+4. SSH connectivity validation
+
+5. VPN peer handshake validation
+
+6. Internet access testing through the tunnel
+
+## Documentation
 Detailed deployment guides are available in the docs directory.
 
 ## Security Notice
