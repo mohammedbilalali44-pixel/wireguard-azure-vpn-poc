@@ -49,13 +49,9 @@ Internet access testing through the tunnel
 Documentation
 Detailed deployment guides are available in the docs directory.
 
-## Guide
-Linux Server (Azure) → Linux Client
-Linux Server (Azure) → Windows Client
 ## Security Notice
 This repository contains example configurations only.
-
-## The following items have been intentionally excluded:
+The following items have been intentionally excluded:
 
 Private keys
 Public IP addresses
@@ -69,5 +65,5 @@ Replace all placeholder values with your own lab or production settings before d
 ## Disclaimer
 This project is intended for educational, testing, and proof-of-concept purposes. Review and adjust the configuration to meet your organization's security and compliance requirements before production use.
 
-Author
+## Author
 Mohammed Bilal Ali
