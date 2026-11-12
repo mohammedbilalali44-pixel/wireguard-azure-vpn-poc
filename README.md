@@ -25,11 +25,6 @@ Reference architecture showing a WireGuard VPN tunnel between an Azure-hosted Ub
 
 Reference architecture showing a WireGuard VPN tunnel between an Azure-hosted Ubuntu server and a remote Windows client.
 
-## Technologies Used
-Microsoft Azure
-Ubuntu Server
-WireGuard VPN
-Windows WireGuard Client
 ## Key Features
 Secure VPN connectivity using WireGuard
 Lightweight and high-performance deployment
